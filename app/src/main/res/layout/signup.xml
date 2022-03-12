@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have Account?"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Username"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="174dp" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine4"
+        android:layout_width="174dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Last Name"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="102dp" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine5"
+        android:layout_width="179dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="First Name"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="104dp" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Password"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="228dp" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Confirm Password"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="286dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="388dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
