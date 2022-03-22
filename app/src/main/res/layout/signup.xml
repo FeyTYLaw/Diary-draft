@@ -1,96 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back_brown_water"
     tools:context=".SignupActivity">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/signuptitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/nothing_you_could_do"
+        android:gravity="center"
+        android:text="Sign up"
+        android:textColor="#B69f95"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signuptitle"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_face_24"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/nothing_you_could_do"
+        android:hint="Username"
+        android:padding="20dp"
+        android:textColor="@color/Nude"
+        android:textColorHint="@color/Nude"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/nothing_you_could_do"
+        android:hint="Email"
+        android:padding="20dp"
+        android:textColor="@color/Nude"
+        android:textColorHint="@color/Nude"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/nothing_you_could_do"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="@color/Nude"
+        android:textColorHint="@color/Nude"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/nothing_you_could_do"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="@color/Nude"
+        android:textColorHint="@color/Nude"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signupbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign up"
-        tools:layout_editor_absoluteX="182dp"
-        tools:layout_editor_absoluteY="35dp" />
+        android:layout_below="@+id/confirm_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#B69F95"
+        android:fontFamily="@font/nothing_you_could_do"
+        android:text="REGISTER"
+        android:textSize="25dp"
+        android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Have Account?"
-        tools:layout_editor_absoluteX="201dp"
-        tools:layout_editor_absoluteY="450dp" />
+        android:layout_above="@+id/socialicons"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/nothing_you_could_do"
+        android:text="or sign up with"
+        android:textColor="#B69f95"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/editTextTextMultiLine"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="Username"
-        android:inputType="textMultiLine"
-        tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="174dp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/socialicons"
+    android:layout_alignParentBottom="true"
+    android:gravity="center">
 
-    <EditText
-        android:id="@+id/editTextTextMultiLine4"
-        android:layout_width="174dp"
-        android:layout_height="45dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="Last Name"
-        android:inputType="textMultiLine"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="102dp" />
 
-    <EditText
-        android:id="@+id/editTextTextMultiLine5"
-        android:layout_width="179dp"
-        android:layout_height="43dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="First Name"
-        android:inputType="textMultiLine"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="104dp" />
-
-    <EditText
-        android:id="@+id/editTextTextMultiLine2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="Password"
-        android:inputType="textMultiLine"
-        tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="228dp" />
-
-    <EditText
-        android:id="@+id/editTextTextMultiLine3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="Confirm Password"
-        android:inputType="textMultiLine"
-        tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="286dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Register"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="388dp" />
-
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Switch"
-        tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="68dp" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/google"/>
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/facebook"/>
+    <ImageView
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:layout_margin="20dp"
+    android:src="@drawable/twitter"/>
+</LinearLayout>
+</RelativeLayout>
