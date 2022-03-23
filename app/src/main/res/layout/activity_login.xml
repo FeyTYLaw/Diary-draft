@@ -9,6 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/back_brown_water"
     tools:context=".ui.login.LoginActivity">
 
     <Button
@@ -71,9 +72,9 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/dawning_of_a_new_day"
+        android:fontFamily="@font/nothing_you_could_do"
         android:text="Welcome to PoPo"
-        android:textSize="35"
+        android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/username"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.554"

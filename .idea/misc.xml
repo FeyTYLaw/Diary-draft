@@ -3,15 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/font/nothing_you_could_do.xml" value="0.17552083333333332" />
         <entry key="app/src/main/res/font/srisakdi_bold.xml" value="0.26666666666666666" />
         <entry key="app/src/main/res/layout-w1240dp/activity_login.xml" value="0.1921875" />
         <entry key="app/src/main/res/layout-w936dp/activity_login.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_signin.xml" value="0.253125" />
         <entry key="app/src/main/res/layout/folder.xml" value="0.45" />
-        <entry key="app/src/main/res/layout/homepage.xml" value="0.45" />
+        <entry key="app/src/main/res/layout/homepage.xml" value="0.25" />
         <entry key="app/src/main/res/layout/newentry.xml" value="0.375" />
         <entry key="app/src/main/res/layout/setting.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/signup.xml" value="0.259375" />
+        <entry key="app/src/main/res/layout/signup.xml" value="0.375" />
         <entry key="app/src/main/res/layout/welcome_page_slide.xml" value="0.335" />
       </map>
     </option>

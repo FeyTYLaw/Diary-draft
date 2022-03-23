@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back_brown_water"
     tools:context=".HomepageActivity">
 
     <TextView
@@ -12,7 +13,8 @@
         android:layout_height="wrap_content"
         android:text="Homepage"
         tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="166dp" />
+        tools:layout_editor_absoluteY="166dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView7"
