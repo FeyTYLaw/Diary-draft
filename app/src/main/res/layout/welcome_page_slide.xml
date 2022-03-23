@@ -4,13 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back_brown_water"
     tools:context=".WelcomePageSlideActivity">
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="212dp"
-        android:layout_height="118dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="300dp"
+        android:fontFamily="@font/nothing_you_could_do"
+        android:gravity="center"
         android:text="Welcome to PoPo"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="212dp" />
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.86" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,8 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/14379/AndroidStudioProjects/Diary-draft/app/src/main/res/layout/newentry.xml" value="0.5" />
-        <entry key="..\:/Users/14379/AndroidStudioProjects/Diary-draft/app/src/main/res/layout/signup.xml" value="0.1796875" />
         <entry key="app/src/main/res/font/srisakdi_bold.xml" value="0.26666666666666666" />
         <entry key="app/src/main/res/layout-w1240dp/activity_login.xml" value="0.1921875" />
         <entry key="app/src/main/res/layout-w936dp/activity_login.xml" value="0.1" />
