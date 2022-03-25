@@ -24,7 +24,7 @@ import com.google.android.gms.tasks.Task;
 public class Signin extends AppCompatActivity {
 
 
-    private EditText email;
+    private EditText username;
     private EditText password;
     private Button login;
     private Button register;
@@ -44,7 +44,8 @@ public class Signin extends AppCompatActivity {
         setContentView(R.layout.activity_signin);
 
 
-        email = findViewById(R.id.email);
+        //email = findViewById(R.id.email);
+        username = findViewById(R.id.username);
         password = findViewById(R.id.enterpassword);
         login = findViewById(R.id.siginpbutton);
         register = findViewById(R.id.noaccount);
@@ -61,7 +62,7 @@ public class Signin extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String inputName = email.getText().toString();
+                String inputName = username.getText().toString();
                 String inputPassword = password.getText().toString();
 
                 if(inputName.isEmpty()|| inputPassword.isEmpty()){
@@ -73,7 +74,7 @@ public class Signin extends AppCompatActivity {
                     }else{
                         Toast.makeText(Signin.this,"Login Successful", Toast.LENGTH_SHORT).show();
                         //Add the code to go to new activity
-                        Intent intent = new Intent(Signin.this, WelcomePageSlideActivity.class);
+                        Intent intent = new Intent(Signin.this, NewentryActivity.class);
                         startActivity(intent);
 
                     }

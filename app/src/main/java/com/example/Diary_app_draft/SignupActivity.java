@@ -15,8 +15,8 @@ import android.widget.Toast;
 
 import com.google.android.material.button.MaterialButton;
 
-public class SignupActivity extends AppCompatActivity {
-    public Button button;
+public class SignupActivity extends AppCompatActivity implements View.OnClickListener {
+    //public Button button;
     EditText username;
     EditText email;
     EditText password;
@@ -60,6 +60,15 @@ public class SignupActivity extends AppCompatActivity {
         }
         if (!isEmail(email)){
             email.setError("Enter Valid email!");
+        }
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch(view.getId()){
+            case R.id.signupbutton:
+
+                break;
         }
     }
 
