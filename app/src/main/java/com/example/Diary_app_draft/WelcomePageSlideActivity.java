@@ -19,8 +19,8 @@ public class WelcomePageSlideActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable(){
             @Override
             public void run(){
-                Intent gomeIntent = new Intent(WelcomePageSlideActivity.this, Signin.class);
-                startActivity(gomeIntent);
+                Intent i = new Intent(WelcomePageSlideActivity.this, Signin.class);
+                startActivity(i);
                 finish();
             }
         }, FADING);

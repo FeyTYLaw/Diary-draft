@@ -58,7 +58,7 @@ public class SignupActivity extends AppCompatActivity {
             Toast t = Toast.makeText(this,"Username is required!", Toast.LENGTH_SHORT);
             t.show();
         }
-        if (isEmail(email) == false){
+        if (!isEmail(email)){
             email.setError("Enter Valid email!");
         }
     }
