@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_brown_water"
+    android:orientation="vertical"
+    tools:context=".Signin">
+
+    <TextView
+        android:id="@+id/clicktosignin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/googlesignin"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/nothing_you_could_do"
+        android:text="@string/click_to_signin"
+        android:textColor="@color/Nude"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/googlesignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/singinwith" />
+
+
+
+    <TextView
+        android:id="@+id/welcome_to_popo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/nothing_you_could_do"
+        android:gravity="center"
+        android:text="@string/welcome_to_popo"
+        android:textColor="#B69f95"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/entremail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_to_popo"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/nothing_you_could_do"
+        android:hint="@string/sign_in_with_email"
+        android:padding="20dp"
+        android:textColor="@color/Nude"
+        android:textColorHint="@color/Nude"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/enterpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/entremail"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/nothing_you_could_do"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="@color/Nude"
+        android:textColorHint="@color/Nude"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/siginpbutton"
+        android:layout_width="393dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/enterpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#B69F95"
+        android:fontFamily="@font/nothing_you_could_do"
+        android:text="@string/signin"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/forgetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/siginpbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:fontFamily="@font/nothing_you_could_do"
+        android:text="@string/forgot_password"
+        android:textColor="#B69F95"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/noaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_above="@id/singinwith"
+        android:layout_below="@id/forgetPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="75dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:fontFamily="@font/nothing_you_could_do"
+        android:text="@string/don_t_have_account"
+        android:textColor="#B69F95"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/singinwith"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/socialicons"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/nothing_you_could_do"
+        android:text="@string/or_sign_in_with"
+        android:textColor="#B69f95"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/socialicons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/google" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/fbk" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/twit" />
+    </LinearLayout>
+</RelativeLayout>
+
+
