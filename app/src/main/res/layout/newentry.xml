@@ -49,18 +49,14 @@
         app:layout_constraintStart_toEndOf="@+id/Date"
         app:layout_constraintTop_toBottomOf="@+id/Entry" />
 
-    <EditText
-        android:id="@+id/editTextTextMultiLine"
-        android:layout_width="317dp"
-        android:layout_height="73dp"
+    <TextView
+        android:id="@+id/EntryText"
+        android:layout_width="379dp"
+        android:layout_height="580dp"
         android:layout_marginStart="16dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="Enter entry here..."
-        android:inputType="textMultiLine"
+        android:text="Enter entry here..."
         android:textSize="24sp"
-        android:fontFamily="@font/nothing_you_could_do"
-        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
