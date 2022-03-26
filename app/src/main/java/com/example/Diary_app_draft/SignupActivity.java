@@ -67,7 +67,10 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
     public void onClick(View view) {
         switch(view.getId()){
             case R.id.signupbutton:
-
+                String name = username.getText().toString();
+                String password = this.password.getText().toString();
+                String email = this.email.getText().toString();
+                User registeredData = new User(name,email, password);
                 break;
         }
     }

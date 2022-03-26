@@ -51,12 +51,23 @@
 
     <TextView
         android:id="@+id/EntryText"
-        android:layout_width="379dp"
-        android:layout_height="580dp"
+        android:layout_width="380dp"
+        android:layout_height="546dp"
         android:layout_marginStart="16dp"
         android:text="Enter entry here..."
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="230dp"
+        android:layout_marginBottom="20dp"
+        android:text="@+String/Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
