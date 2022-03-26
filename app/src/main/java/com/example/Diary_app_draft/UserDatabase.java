@@ -16,7 +16,7 @@ public class UserDatabase {
         spEditor.putString("name", user.username);
         spEditor.putString("email", user.email);
         spEditor.putString("password", user.password);
-        spEditor.commit();
+        spEditor.apply();
     }
     public User getLoggedInUser(){
         String username = userDatabase.getString("name","");
@@ -30,20 +30,16 @@ public class UserDatabase {
     public void setUserLoggedIn(boolean loggedIn){
         SharedPreferences.Editor spEditor = userDatabase.edit();
         spEditor.putBoolean("loggedin",loggedIn);
-        spEditor.commit();
+        spEditor.apply();
     }
 
     public boolean getUserLoggedIn(){
-        if(userDatabase.getBoolean("loggedIn", false) == true){
-            return true;
-        }else{
-              return false;
-            }
+        return userDatabase.getBoolean("loggedIn", false);
         }
 
     public void clearUserData(){
         SharedPreferences.Editor spEditor = userDatabase.edit();
         spEditor.clear();
-        spEditor.commit();
+        spEditor.apply();
     }
 }

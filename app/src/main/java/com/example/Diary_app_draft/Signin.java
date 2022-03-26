@@ -32,6 +32,7 @@ public class Signin extends AppCompatActivity {
     private String Username = "Admin";
     private String Password = "12345";
     boolean isValid = false;
+    UserDatabase  userDatabase;
 
 
    /* SignInButton signInButton;
@@ -46,13 +47,20 @@ public class Signin extends AppCompatActivity {
 
         //email = findViewById(R.id.email);
         username = findViewById(R.id.username);
-        password = findViewById(R.id.enterpassword);
+        password = findViewById(R.id.password);
         login = findViewById(R.id.siginpbutton);
         register = findViewById(R.id.noaccount);
-
+        userDatabase = new UserDatabase(this);
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                switch(view.getId()){
+                    case R.id.login:
+                        User user = new User(null, null);
+                        userDatabase.storeUserData(user);
+                        userDatabase.setUserLoggedIn(true);
+                        break;
+                }
                 Intent intent = new Intent(Signin.this, SignupActivity.class);
                 startActivity(intent);
             }
@@ -83,10 +91,7 @@ public class Signin extends AppCompatActivity {
         });
     }
     private boolean validate(String name, String password){
-        if(name.equals(Username) && password.equals(Password)){
-            return true;
-        }
-        return false;
+        return name.equals(Username) && password.equals(Password);
     }
 
 
