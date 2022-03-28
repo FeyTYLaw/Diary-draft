@@ -13,9 +13,9 @@ public class UserDatabase {
     }
     public void storeUserData(User user){
         SharedPreferences.Editor spEditor = userDatabase.edit();
-        spEditor.putString("name", user.username);
-        spEditor.putString("email", user.email);
-        spEditor.putString("password", user.password);
+        spEditor.putString("name", user.getUsername());
+        spEditor.putString("email", user.getEmail());
+        spEditor.putString("password", user.getPassword());
         spEditor.apply();
     }
     public User getLoggedInUser(){

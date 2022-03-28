@@ -15,6 +15,8 @@ import android.widget.Toast;
 
 import com.google.android.material.button.MaterialButton;
 
+import java.util.ArrayList;
+
 public class SignupActivity extends AppCompatActivity implements View.OnClickListener {
     //public Button button;
     EditText username;
@@ -22,6 +24,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
     EditText password;
     EditText confirmPassword;
     Button register;
+    ArrayList<String> userLoginInfo = new ArrayList<String>();
 
 
     @Override
@@ -70,10 +73,23 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
                 String name = username.getText().toString();
                 String password = this.password.getText().toString();
                 String email = this.email.getText().toString();
-                User registeredData = new User(name,email, password);
+                //User registeredData = new User(name,email, password);
                 break;
         }
     }
+
+/*
+
+    EditText  = (EditText) findViewById(R.id.edittext);
+    String text = ed.getText().toString();
+    int arr[] = new int[text.length()/2];//Assuming no spaces and user is using one comma between numbers
+    int i=0;
+    while(text!=null && text.length()>0) {
+        arr[i] = Integer.parseInt(text.substring(0,1));
+        text = text.substring(text.indexOf(",")+1);
+        i++;
+    }
+*/
 
 
   /*      EditText username = (EditText) findViewById(R.id.username);

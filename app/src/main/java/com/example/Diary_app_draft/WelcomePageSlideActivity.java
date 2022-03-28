@@ -6,11 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.example.Diary_app_draft.data.LoginRepository;
+
 
 public class WelcomePageSlideActivity extends AppCompatActivity {
     private static int FADING = 4000;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

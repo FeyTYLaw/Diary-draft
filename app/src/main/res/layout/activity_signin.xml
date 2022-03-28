@@ -12,19 +12,12 @@
         android:id="@+id/clicktosignin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/googlesignin"
         android:layout_centerInParent="true"
         android:fontFamily="@font/nothing_you_could_do"
         android:text="@string/click_to_signin"
         android:textColor="@color/Nude"
         android:textSize="19sp"
         android:textStyle="bold" />
-
-    <com.google.android.gms.common.SignInButton
-        android:id="@+id/googlesignin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/singinwith" />
 
 
 
@@ -100,35 +93,17 @@
         android:textSize="25sp"
         android:textStyle="bold" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/forgetPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_below="@+id/siginpbutton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="0dp"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        android:fontFamily="@font/nothing_you_could_do"
-        android:text="@string/forgot_password"
-        android:textColor="#B69F95"
-        android:textSize="12sp"
-        android:textStyle="bold" />
-
 
     <Button
         android:id="@+id/noaccount"
         android:layout_width="wrap_content"
         android:layout_height="42dp"
-        android:layout_above="@id/singinwith"
-        android:layout_below="@id/forgetPassword"
+        android:layout_below="@id/siginpbutton"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="75dp"
+        android:layout_marginBottom="166dp"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:fontFamily="@font/nothing_you_could_do"
         android:text="@string/don_t_have_account"
@@ -136,45 +111,8 @@
         android:textSize="12sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/singinwith"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/socialicons"
-        android:layout_centerHorizontal="true"
-        android:fontFamily="@font/nothing_you_could_do"
-        android:text="@string/or_sign_in_with"
-        android:textColor="#B69f95"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
-    <LinearLayout
-        android:id="@+id/socialicons"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:gravity="center">
 
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="38dp"
-            android:layout_margin="20dp"
-            android:src="@drawable/google" />
-
-        <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_margin="20dp"
-            android:src="@drawable/fbk" />
-
-        <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_margin="20dp"
-            android:contentDescription="@string/todo"
-            android:src="@drawable/twit" />
-    </LinearLayout>
 </RelativeLayout>
 
 
