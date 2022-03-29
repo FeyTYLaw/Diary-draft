@@ -4,22 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
-import android.util.Log;
-import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.auth.api.signin.GoogleSignIn;
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
-import com.google.android.gms.auth.api.signin.GoogleSignInClient;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.common.SignInButton;
-import com.google.android.gms.common.api.ApiException;
-import com.google.android.gms.tasks.Task;
 
 public class Signin extends AppCompatActivity {
 
@@ -28,13 +17,13 @@ public class Signin extends AppCompatActivity {
     private EditText password;
     private Button login;
     private Button register;
+    private Button noAcc;
 
-    private String Username = "Admin";
+    /*private String Username = "Admin";
     private String Password = "12345";
-    boolean isValid = false;
-    UserDatabase  userDatabase;
+    boolean isValid = false;*/
 
-
+    SQLHelper SQL;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,50 +34,43 @@ public class Signin extends AppCompatActivity {
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
         login = findViewById(R.id.siginpbutton);
-        register = findViewById(R.id.noaccount);
-        userDatabase = new UserDatabase(this);
-        register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                switch(view.getId()){
-                    case R.id.siginpbutton:
-                       // User user = new User(null, null);
-                       // userDatabase.storeUserData(user);
-                        userDatabase.setUserLoggedIn(true);
-                        break;
-                }
-                Intent intent = new Intent(Signin.this, SignupActivity.class);
-                startActivity(intent);
-            }
-        });
+        register = findViewById(R.id.signupbutton);
+        noAcc = findViewById(R.id.noaccount);
+
+        SQL = new SQLHelper(this);
+
 
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String inputName = username.getText().toString();
-                String inputPassword = password.getText().toString();
+                String user = username.getText().toString();
+                String pw = password.getText().toString();
 
-                if(inputName.isEmpty()|| inputPassword.isEmpty()){
-                    Toast.makeText(Signin.this,"Please enter email or Password", Toast.LENGTH_SHORT).show();
-                }else{
-                    isValid = validate(inputName, inputPassword);
-                    if(!isValid){
-                        Toast.makeText(Signin.this,"Your username or password is incorrect", Toast.LENGTH_SHORT).show();
-                    }else{
-                        Toast.makeText(Signin.this,"Login Successful", Toast.LENGTH_SHORT).show();
-                        //Add the code to go to new activity
-                        Intent intent = new Intent(Signin.this, NewentryActivity.class);
+                if (user.equals("") || pw.equals("")) {
+                    Toast.makeText(Signin.this, "Please fill up all the fields", Toast.LENGTH_SHORT).show();
+                } else {
+                    Boolean checkuserpass = SQL.checkusernamepassword(user, pw);
+                    if (checkuserpass) {
+                        Toast.makeText(Signin.this, "Sign in successful", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(getApplicationContext(), NewentryActivity.class);
                         startActivity(intent);
-
+                    } else {
+                        Toast.makeText(Signin.this, "Your username or password is incorrect", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
         });
-    }
-    private boolean validate(String name, String password){
-        return name.equals(Username) && password.equals(Password);
-    }
 
+        noAcc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Signin.this, SignupActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+    }
 
 }
