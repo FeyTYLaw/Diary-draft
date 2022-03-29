@@ -32,6 +32,7 @@ public class NewentryActivity extends AppCompatActivity implements View.OnClickL
 
         TextView textviewDate = findViewById(R.id.Date);
         textviewDate.setText(currentDate);
+        String cal = calender.toString();
     }
 
     @Override
