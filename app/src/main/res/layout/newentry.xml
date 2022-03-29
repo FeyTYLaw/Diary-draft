@@ -9,65 +9,79 @@
 
     <EditText
         android:id="@+id/Entry"
-        android:layout_width="333dp"
-        android:layout_height="61dp"
+        android:layout_width="382dp"
+        android:layout_height="58dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:fontFamily="@font/nothing_you_could_do"
-        android:textStyle="bold"
         android:gravity="start|top"
         android:hint="Entry Title"
-
-
         android:inputType="textMultiLine"
+
+
         android:textColorHint="@color/Nude"
         android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/Date"
-        android:layout_width="114dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="16dp"
+        android:layout_width="397dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/nothing_you_could_do"
         android:text="Date"
         android:textSize="20sp"
-        android:fontFamily="@font/nothing_you_could_do"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Entry" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/wordCount"
         android:layout_width="107dp"
         android:layout_height="33dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/nothing_you_could_do"
         android:text="Word Count"
         android:textSize="20sp"
-        android:fontFamily="@font/nothing_you_could_do"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/Date"
-        app:layout_constraintTop_toBottomOf="@+id/Entry" />
-
-    <TextView
-        android:id="@+id/EntryText"
-        android:layout_width="380dp"
-        android:layout_height="546dp"
-        android:layout_marginStart="16dp"
-        android:text="Enter entry here..."
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/Logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="230dp"
-        android:layout_marginBottom="20dp"
-        android:text="@+String/Logout"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#B69F95"
+        android:text="Logout"
+        android:textColor="@color/Nude"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="320dp"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="399dp"
+        android:layout_height="496dp"
+        android:hint="Entry"
+        app:layout_constraintBottom_toTopOf="@+id/wordCount"
+        app:layout_constraintTop_toBottomOf="@+id/Date"
+        tools:layout_editor_absoluteX="12dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

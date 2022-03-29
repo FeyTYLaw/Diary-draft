@@ -6,12 +6,13 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class SQLHelper extends SQLiteOpenHelper {
-
+//create data base
     private static final String DATABASE_NAME = "UserManager.db";
 
     public SQLHelper(Context context) {
         super(context, "UserManager.db", null, 1);
     }
+    //create table, using username and password
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create Table users(username TEXT primary key, password TEXT)");
@@ -24,7 +25,7 @@ public class SQLHelper extends SQLiteOpenHelper {
         //Create tables again
         //onCreate(db);
     }
-
+//adding user input
     public Boolean insertData(String username, String password) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
