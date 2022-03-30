@@ -30,7 +30,7 @@ public class FolderActivity extends AppCompatActivity {
             protected List<DiaryEntry> doInBackground(Void... voids) {
                 return DiaryDataBase
                         .getDiaryDataBase(getApplicationContext())
-                        .diaryDao().getAlldiary();
+                        .diaryDao().getDiaryInput();
             }
 
             @Override
