@@ -19,9 +19,6 @@
             android:name=".NewentryActivity"
             android:exported="true" />
         <activity
-            android:name=".SettingActivity"
-            android:exported="false" />
-        <activity
             android:name=".FolderActivity"
             android:exported="false" />
         <activity
