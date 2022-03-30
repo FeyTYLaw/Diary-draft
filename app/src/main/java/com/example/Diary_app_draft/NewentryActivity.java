@@ -57,7 +57,13 @@ public class NewentryActivity extends AppCompatActivity implements View.OnClickL
         note.setMainTitle(TitleEntry.getText().toString());
         note.setDiaryText(inputDiary.getText().toString());
 
-        class SaveNoteTask extends
+        class SaveNoteTask extends AsyncTask<Void, Void, Void>{
+
+            @Override
+            protected Void doInBackground(Void... voids){
+
+            }
+        }
     }
 
 }
