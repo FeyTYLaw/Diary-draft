@@ -13,7 +13,7 @@ public class DiaryEntry implements Serializable {
     @PrimaryKey(autoGenerate = true)
     private int id;
 
-    @ColumnInfo(name = "main_title")
+    @ColumnInfo(name = "main_tit.le")
     private String mainTitle;
 
     @ColumnInfo (name = "date")
