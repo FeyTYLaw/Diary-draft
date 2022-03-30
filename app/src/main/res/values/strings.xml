@@ -31,4 +31,5 @@
     <string name="date">Date</string>
     <string name="word_count">Word Count</string>
     <string name="logout">Logout</string>
+    <string name="save">save</string>
 </resources>

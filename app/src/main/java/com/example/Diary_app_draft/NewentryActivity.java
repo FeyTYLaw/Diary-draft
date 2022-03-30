@@ -43,6 +43,15 @@ public class NewentryActivity extends AppCompatActivity implements View.OnClickL
         TitleEntry = findViewById(R.id.TitleEntry);
         inputDiary = findViewById(R.id.inputDiary);
 
+        Button buttonSave = findViewById(R.id.buttonSave);
+        buttonSave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                saveDiary();
+            }
+        });
+
+
     }
     @Override
     public void onClick(View view){
