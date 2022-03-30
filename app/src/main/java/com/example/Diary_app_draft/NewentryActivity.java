@@ -2,7 +2,9 @@ package com.example.Diary_app_draft;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -47,23 +49,36 @@ public class NewentryActivity extends AppCompatActivity implements View.OnClickL
         Intent intent = new Intent(this, Signin.class);
         startActivity(intent);
     }
-    private void saveNote(){
+    private void saveDiary(){
         if (TitleEntry.getText().toString().trim().isEmpty()){
             Toast.makeText(this, "Note title should be added!", Toast.LENGTH_SHORT).show();
             return;
         }
 
-        final DiaryEntry note = new DiaryEntry();
-        note.setMainTitle(TitleEntry.getText().toString());
-        note.setDiaryText(inputDiary.getText().toString());
+        final DiaryEntry noteDiary = new DiaryEntry();
+        noteDiary.setMainTitle(TitleEntry.getText().toString());
+        noteDiary.setDiaryText(inputDiary.getText().toString());
 
-        class SaveNoteTask extends AsyncTask<Void, Void, Void>{
+        @SuppressLint("StaticFieldLeak")
+        class SaveDiaryTask extends AsyncTask<Void, Void, Void> {
 
             @Override
             protected Void doInBackground(Void... voids){
+                DiaryDataBase.getDataBase(getApplicationContext()).diaryDao().insertDiary(noteDiary);
+                return null;
+            }
 
+            @Override
+            protected void onPostExecute(Void aVoid){
+                super.onPostExecute(aVoid);
+                Intent intent = new Intent();
+                setResult(RESULT_OK, intent);
+                finish();
             }
         }
+
+        new SaveDiaryTask().execute();
+
     }
 
 }
