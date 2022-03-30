@@ -21,7 +21,7 @@ public class NewentryActivity extends AppCompatActivity implements View.OnClickL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.newentry);
-        logout = findViewById(R.id.layout);
+        logout = findViewById(R.id.Logout);
         username = findViewById(R.id.username);
         logout.setOnClickListener(this);
 
