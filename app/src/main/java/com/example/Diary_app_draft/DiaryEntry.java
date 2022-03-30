@@ -1,9 +1,14 @@
 package com.example.Diary_app_draft;
 
+import androidx.annotation.Nullable;
 import androidx.room.ColumnInfo;
+import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-public class DiaryEntry {
+import java.io.Serializable;
+
+@Entity(tableName = "Diary")
+public class DiaryEntry implements Serializable {
 
     @PrimaryKey(autoGenerate = true)
     private int id;
@@ -47,17 +52,12 @@ public class DiaryEntry {
     }
 
     public void setDiaryText(String diaryText) {
-        this.diaryText = diaryTextb;
+        this.diaryText = diaryText;
     }
-
+    @Nullable
     @Override
     public String toString() {
-        return "DiaryEntry{" +
-                "id=" + id +
-                ", mainTitle='" + mainTitle + '\'' +
-                ", date='" + date + '\'' +
-                ", diaryText='" + diaryText + '\'' +
-                '}';
+        return mainTitle + ": " + date;
         }
     }
 
