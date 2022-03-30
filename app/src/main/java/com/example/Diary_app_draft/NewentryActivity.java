@@ -14,6 +14,8 @@ import java.util.Calendar;
 
 public class NewentryActivity extends AppCompatActivity implements View.OnClickListener {
 
+    
+
     Button logout;
     EditText username;
 

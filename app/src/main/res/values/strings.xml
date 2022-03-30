@@ -26,4 +26,9 @@
     <string name="sign_in_with_email">Sign In with Email</string>
     <string name="click_to_signin">Click to Signin</string>
     <string name="haveAccount">+@string/Already Registered? Sign in here</string>
+    <string name="diary_title">Diary Title</string>
+    <string name="diary_entry">Diary entry</string>
+    <string name="date">Date</string>
+    <string name="word_count">Word Count</string>
+    <string name="logout">Logout</string>
 </resources>
