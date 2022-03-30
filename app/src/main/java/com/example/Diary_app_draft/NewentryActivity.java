@@ -54,8 +54,8 @@ public class NewentryActivity extends AppCompatActivity implements View.OnClickL
         }
 
         final DiaryEntry note = new DiaryEntry();
-        note.setTitle(TitleEntry.getText().toString());
-        note.setNoteDiary(inputDiary.getText().toString());
+        note.setMainTitle(TitleEntry.getText().toString());
+        note.setDiaryText(inputDiary.getText().toString());
 
         class SaveNoteTask extends
     }
