@@ -11,7 +11,7 @@ import androidx.room.Query;
 import java.util.List;
 
 @Dao
-public interface diaryDao {
+public interface DiaryDao {
     @Query("SELECT* FROM Diary ORDER BY id DESC")
     List<DiaryEntry> getDiaryInput();
 
