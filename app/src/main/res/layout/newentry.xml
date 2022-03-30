@@ -80,15 +80,13 @@
         android:id="@+id/Logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="230dp"
-        android:layout_marginBottom="16dp"
         android:backgroundTint="#B69F95"
         android:text="@string/logout"
         android:textColor="@color/Nude"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.897"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/buttonSave"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toEndOf="@+id/wordCount" />
 
     <Button
         android:id="@+id/buttonSave"
@@ -100,6 +98,10 @@
         android:text="@string/save"
         android:textColor="@color/Nude"
         tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="679dp" />
+        tools:layout_editor_absoluteY="679dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="parent" />/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
