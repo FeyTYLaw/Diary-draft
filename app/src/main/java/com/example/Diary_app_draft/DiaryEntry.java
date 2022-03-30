@@ -47,7 +47,7 @@ public class DiaryEntry {
     }
 
     public void setDiaryText(String diaryText) {
-        this.diaryText = diaryText;
+        this.diaryText = diaryTextb;
     }
 
     @Override
