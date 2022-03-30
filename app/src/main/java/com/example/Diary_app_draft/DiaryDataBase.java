@@ -22,6 +22,7 @@ public abstract class DiaryDataBase extends RoomDatabase {
         return diaryDataBase;
     }
 
-    public abstract DiaryDao diaryDao
+    public abstract DiaryDao diaryDao();
+
 
 }
