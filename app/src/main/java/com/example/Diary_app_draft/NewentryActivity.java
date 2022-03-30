@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.DateFormat;
 import java.util.Calendar;
@@ -18,6 +19,9 @@ public class NewentryActivity extends AppCompatActivity implements View.OnClickL
 
     Button logout;
     EditText username;
+    private EditText TitleEntry;
+    private TextView Date;
+    private EditText inputDiary;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +38,8 @@ public class NewentryActivity extends AppCompatActivity implements View.OnClickL
         TextView textviewDate = findViewById(R.id.Date);
         textviewDate.setText(currentDate);
         String cal = calender.toString();
+        TitleEntry = findViewById(R.id.TitleEntry);
+        inputDiary = findViewById(R.id.inputDiary);
 
     }
     @Override
@@ -41,4 +47,17 @@ public class NewentryActivity extends AppCompatActivity implements View.OnClickL
         Intent intent = new Intent(this, Signin.class);
         startActivity(intent);
     }
+    private void saveNote(){
+        if (TitleEntry.getText().toString().trim().isEmpty()){
+            Toast.makeText(this, "Note title should be added!", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        final DiaryEntry note = new DiaryEntry();
+        note.setTitle(TitleEntry.getText().toString());
+        note.setNoteDiary(inputDiary.getText().toString());
+
+        class SaveNoteTask extends
+    }
+
 }
