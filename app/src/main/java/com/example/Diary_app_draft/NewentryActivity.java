@@ -73,7 +73,7 @@ public class NewentryActivity extends AppCompatActivity implements View.OnClickL
 
             @Override
             protected Void doInBackground(Void... voids){
-                DiaryDataBase.getDataBase(getApplicationContext()).diaryDao().insertDiary(noteDiary);
+                DiaryDataBase.getDiaryDataBase(getApplicationContext()).diaryDao().insertDiary(noteDiary);
                 return null;
             }
 
