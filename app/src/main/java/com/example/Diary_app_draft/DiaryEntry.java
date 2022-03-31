@@ -1,13 +1,14 @@
 package com.example.Diary_app_draft;
 
-import androidx.annotation.Nullable;
+import androidx.annotation.NonNull;
+
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 import java.io.Serializable;
 
-@Entity(tableName = "Diary")
+@Entity(tableName ="DiaryEntry")
 public class DiaryEntry implements Serializable {
 
     @PrimaryKey(autoGenerate = true)
@@ -54,7 +55,8 @@ public class DiaryEntry implements Serializable {
     public void setDiaryText(String diaryText) {
         this.diaryText = diaryText;
     }
-    @Nullable
+
+    @NonNull
     @Override
     public String toString() {
         return mainTitle + ": " + date;

@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,6 +25,7 @@ public class NewentryActivity extends AppCompatActivity implements View.OnClickL
     private EditText TitleEntry;
     private TextView Date;
     private EditText inputDiary;
+    private ImageView diaryEntry;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

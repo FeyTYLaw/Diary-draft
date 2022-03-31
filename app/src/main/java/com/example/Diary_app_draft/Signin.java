@@ -53,7 +53,7 @@ public class Signin extends AppCompatActivity {
                     Boolean checkuserpass = SQL.checkusernamepassword(user, pw);
                     if (checkuserpass) {
                         Toast.makeText(Signin.this, "Sign in successful", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(getApplicationContext(), NewentryActivity.class);
+                        Intent intent = new Intent(getApplicationContext(), FolderActivity.class);
                         startActivity(intent);
                     } else {
                         Toast.makeText(Signin.this, "Your username or password is incorrect", Toast.LENGTH_SHORT).show();

@@ -12,13 +12,14 @@ import java.util.List;
 
 @Dao
 public interface DiaryDao {
-    @Query("SELECT* FROM Diary ORDER BY id DESC")
+
+    @Query("SELECT * FROM DiaryEntry ORDER BY id DESC")
     List<DiaryEntry> getDiaryInput();
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    void insertDiary(DiaryEntry diaryEntry);
+    void insertDiary(DiaryEntry Diary);
 
     @Delete
-    void deleteDiaryEntry(DiaryEntry diaryEntry);
+    void deleteDiaryEntry(DiaryEntry Diary);
 
 }
