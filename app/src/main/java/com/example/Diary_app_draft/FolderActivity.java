@@ -1,6 +1,7 @@
 package com.example.Diary_app_draft;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
 import android.os.AsyncTask;
@@ -12,6 +13,9 @@ import java.util.List;
 public class FolderActivity extends AppCompatActivity {
 
     public static final int REQUEST_CODE = 1;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
