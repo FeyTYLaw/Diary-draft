@@ -1,6 +1,7 @@
 package com.example.Diary_app_draft;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -18,6 +19,9 @@ public class FolderActivity extends AppCompatActivity {
     private Button addNewEntry;
 
     public static final int REQUEST_CODE_ADD_ENTRY = 1;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
