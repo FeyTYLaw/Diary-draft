@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/back_brown_water"
     android:orientation="vertical"
-    tools:context=".Signin">
+    tools:context=".Login_reg.Signin">
 
     <TextView
         android:id="@+id/clicktosignin"

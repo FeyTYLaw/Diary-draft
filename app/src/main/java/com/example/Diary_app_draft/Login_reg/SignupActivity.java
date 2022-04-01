@@ -1,4 +1,4 @@
-package com.example.Diary_app_draft;
+package com.example.Diary_app_draft.Login_reg;
 import androidx.appcompat.app.AppCompatActivity;
 import android.widget.Button;
 import android.content.Intent;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.Diary_app_draft.R;
 
 public class SignupActivity extends AppCompatActivity {
 

@@ -13,7 +13,7 @@
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".Signin"
+            android:name=".Login_reg.Signin"
             android:exported="true" />
         <activity
             android:name=".NewentryActivity"
@@ -25,14 +25,14 @@
             android:name=".HomepageActivity"
             android:exported="false" />
         <activity
-            android:name=".SignupActivity"
+            android:name=".Login_reg.SignupActivity"
             android:exported="true" />
         <activity
             android:name=".ui.login.LoginActivity"
             android:exported="false"/>
 
         <activity
-            android:name=".WelcomePageSlideActivity"
+            android:name=".Login_reg.WelcomePageSlideActivity"
             android:exported="true" >
 
             <intent-filter>

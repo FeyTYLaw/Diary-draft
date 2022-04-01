@@ -1,4 +1,4 @@
-package com.example.Diary_app_draft;
+package com.example.Diary_app_draft.Login_reg;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;

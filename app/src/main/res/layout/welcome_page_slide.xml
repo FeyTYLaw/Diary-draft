@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back_brown_water"
-    tools:context=".WelcomePageSlideActivity">
+    tools:context=".Login_reg.WelcomePageSlideActivity">
 
     <TextView
         android:id="@+id/textView3"

@@ -1,4 +1,4 @@
-package com.example.Diary_app_draft;
+package com.example.Diary_app_draft.Login_reg;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.Diary_app_draft.FolderActivity;
+import com.example.Diary_app_draft.R;
 
 
 public class Signin extends AppCompatActivity {

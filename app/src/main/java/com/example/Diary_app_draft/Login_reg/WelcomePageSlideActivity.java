@@ -1,4 +1,4 @@
-package com.example.Diary_app_draft;
+package com.example.Diary_app_draft.Login_reg;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.example.Diary_app_draft.R;
 
 
 public class WelcomePageSlideActivity extends AppCompatActivity {
