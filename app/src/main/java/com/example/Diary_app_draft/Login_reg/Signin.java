@@ -11,6 +11,8 @@ import android.widget.Toast;
 
 import com.example.Diary_app_draft.FolderActivity;
 import com.example.Diary_app_draft.R;
+import com.example.Diary_app_draft.Sharepreference.entryplusview;
+//import com.example.Diary_app_draft.entryplusview;
 
 
 public class Signin extends AppCompatActivity {
@@ -56,7 +58,7 @@ public class Signin extends AppCompatActivity {
                     Boolean checkuserpass = SQL.checkusernamepassword(user, pw);
                     if (checkuserpass) {
                         Toast.makeText(Signin.this, "Sign in successful", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(getApplicationContext(), FolderActivity.class);
+                        Intent intent = new Intent(getApplicationContext(), entryplusview.class);
                         startActivity(intent);
                     } else {
                         Toast.makeText(Signin.this, "Your username or password is incorrect", Toast.LENGTH_SHORT).show();

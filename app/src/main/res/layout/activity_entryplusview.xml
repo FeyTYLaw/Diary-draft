@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".entryplusview">
+    tools:context=".Sharepreference.entryplusview">
 
     <EditText
         android:id="@+id/et_entry"
@@ -24,7 +24,10 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        android:text="Save" />
+        android:textColor="#B69f95"
+        android:textStyle="bold"
+        android:fontFamily="@font/nothing_you_could_do"
+        android:text="@string/save_entry" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"

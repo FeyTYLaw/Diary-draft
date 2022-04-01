@@ -1,29 +1,20 @@
-package com.example.Diary_app_draft;
+package com.example.Diary_app_draft.Sharepreference;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.os.Bundle;
-import android.os.Handler;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-
 import com.example.Diary_app_draft.R;
-import com.example.Diary_app_draft.Sharepreference.TaskAdapter;
-import com.example.Diary_app_draft.Sharepreference.TaskModel;
-import com.example.Diary_app_draft.Sharepreference.perfCon;
-
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.Date;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
+
 
 public class entryplusview extends AppCompatActivity {
     private Button save;
