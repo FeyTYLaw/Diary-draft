@@ -8,6 +8,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.List;
+
 public class DiaryAdapter extends RecyclerView.Adapter<DiaryAdapter.DiaryViewHodler> {
 
     private List<DiaryEntry> Diary;
