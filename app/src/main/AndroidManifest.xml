@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplicationDsdsd">
         <activity
-            android:name=".HomeActivity"
-            android:exported="false" />
-        <activity
             android:name=".Login_reg.Signin"
             android:exported="true" />
         <activity
@@ -20,9 +17,6 @@
             android:exported="true" />
         <activity
             android:name=".FolderActivity"
-            android:exported="false" />
-        <activity
-            android:name=".HomepageActivity"
             android:exported="false" />
         <activity
             android:name=".Login_reg.SignupActivity"
