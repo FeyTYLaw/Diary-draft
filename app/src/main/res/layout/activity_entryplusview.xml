@@ -24,10 +24,10 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        android:textColor="#B69f95"
-        android:textStyle="bold"
         android:fontFamily="@font/nothing_you_could_do"
-        android:text="@string/save_entry" />
+        android:text="@string/save_entry"
+        android:textColor="#B69f95"
+        android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
