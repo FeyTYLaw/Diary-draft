@@ -30,10 +30,8 @@ public class entryplusview extends AppCompatActivity {
     private RecyclerView recyclerView;
     private TaskAdapter adapter;
     private Button remove;
-
     private List<TaskModel> taskList;
-    String[] data = {"Hello","Hi","Welcome"};
-    int counter = 0;
+
 
 
 

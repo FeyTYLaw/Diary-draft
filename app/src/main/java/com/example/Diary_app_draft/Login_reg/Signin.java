@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.Diary_app_draft.FolderActivity;
 import com.example.Diary_app_draft.R;
 import com.example.Diary_app_draft.Sharepreference.entryplusview;
 //import com.example.Diary_app_draft.entryplusview;
@@ -34,7 +33,6 @@ public class Signin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
-
 
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);

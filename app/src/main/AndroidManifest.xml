@@ -18,12 +18,6 @@
             android:name=".Login_reg.Signin"
             android:exported="true" />
         <activity
-            android:name=".NewentryActivity"
-            android:exported="true" />
-        <activity
-            android:name=".FolderActivity"
-            android:exported="false" />
-        <activity
             android:name=".Login_reg.SignupActivity"
             android:exported="true" />
         <activity

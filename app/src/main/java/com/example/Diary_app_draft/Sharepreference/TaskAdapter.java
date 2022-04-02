@@ -40,8 +40,6 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.Holder> {
 
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.recyclerlayout, parent,false);
-        /*return new Holder(LayoutInflater.from(context)
-                .inflate(R.layout.recyclerlayout, parent, false));*/
         return new Holder(view).linkAdapter(this);
     }
 
