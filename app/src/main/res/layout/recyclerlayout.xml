@@ -7,7 +7,7 @@
 
     <TextView
         android:id="@+id/oldDiary"
-        android:layout_width="match_parent"
+        android:layout_width="392dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
@@ -21,14 +21,16 @@
 
     <TextView
         android:id="@+id/txt_date"
-        android:layout_width="wrap_content"
+        android:layout_width="86dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginEnd="60dp"
         android:background="@android:color/darker_gray"
+        android:fontFamily="@font/nothing_you_could_do"
         android:padding="5dp"
         android:text="01/04/2022"
-        android:textColor="@android:color/white" />
+        android:textColor="@android:color/white"
+        android:textSize="16dp" />
 
     <Button
         android:id="@+id/remove"
@@ -36,9 +38,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="300dp"
         android:layout_marginEnd="10dp"
-        android:background="@color/Nude"
+        android:background="#B69F95"
+        android:backgroundTint="#B69F95"
         android:padding="5dp"
-        android:text="@string/remove"
+        android:text="Delete"
+        android:fontFamily="@font/nothing_you_could_do"
+        android:textStyle="bold"
+        android:textSize="12dp"
         android:textColor="@android:color/white" />
 
 </LinearLayout>

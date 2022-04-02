@@ -49,9 +49,9 @@
         android:drawableLeft="@drawable/ic_baseline_face_24"
         android:drawablePadding="20dp"
         android:fontFamily="@font/nothing_you_could_do"
-        android:hint="@+string/username"
+        android:hint="Username"
         android:padding="20dp"
-        android:textColor="@color/Nude"
+        android:textColor="#B69F95"
         android:textColorHint="@color/Nude"
         android:textSize="19sp"
         android:textStyle="bold" />
@@ -72,7 +72,7 @@
         android:hint="@string/password"
         android:inputType="textPassword"
         android:padding="20dp"
-        android:textColor="@color/Nude"
+        android:textColor="#B69F95"
         android:textColorHint="@color/Nude"
         android:textSize="19sp"
         android:textStyle="bold" />
@@ -90,6 +90,7 @@
         android:backgroundTint="#B69F95"
         android:fontFamily="@font/nothing_you_could_do"
         android:text="@string/signin"
+        android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold" />
 
