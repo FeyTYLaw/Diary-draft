@@ -4,14 +4,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.Diary_app_draft.Login_reg.Signin;
-import com.example.Diary_app_draft.Login_reg.SignupActivity;
 import com.example.Diary_app_draft.R;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -19,7 +17,6 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.Date;
-import java.util.LinkedList;
 import java.util.List;
 
 
