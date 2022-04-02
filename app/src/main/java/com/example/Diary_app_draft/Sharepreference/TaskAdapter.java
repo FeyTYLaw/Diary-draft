@@ -19,6 +19,10 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.Holder> {
     private Context context;
     private List<TaskModel> taskModelList;
 
+    public TaskAdapter(List<TaskModel> taskModelList){
+        this.taskModelList = taskModelList;
+    }
+
     public TaskAdapter(Context context, List<TaskModel> taskModelList) {
         this.context = context;
         this.taskModelList = taskModelList;
@@ -33,8 +37,12 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.Holder> {
     @NonNull
     @Override
     public Holder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new Holder(LayoutInflater.from(context)
-                .inflate(R.layout.recyclerlayout, parent, false));
+
+        View view = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.recyclerlayout, parent,false);
+        /*return new Holder(LayoutInflater.from(context)
+                .inflate(R.layout.recyclerlayout, parent, false));*/
+        return new Holder(view).linkAdapter(this);
     }
 
     @Override
@@ -51,11 +59,25 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.Holder> {
 
     public class Holder extends RecyclerView.ViewHolder {
         TextView txtTaskName, txtTaskAddTime;
+        private TaskAdapter adapter;
+
         public Holder(@NonNull View itemView) {
             super(itemView);
             txtTaskName = itemView.findViewById(R.id.oldDiary);
             txtTaskAddTime = itemView.findViewById(R.id.txt_date);
+            itemView.findViewById(R.id.remove).setOnClickListener(view -> {
+                adapter.taskModelList.remove(getAdapterPosition());
+                adapter.notifyItemRemoved(getAdapterPosition());
+
+            });
+        }
+        public Holder linkAdapter(TaskAdapter adapter){
+            this.adapter = adapter;
+            return this;
+
         }
     }
+
+
 
 }

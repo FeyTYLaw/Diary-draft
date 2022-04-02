@@ -34,4 +34,5 @@
     <string name="save">save</string>
     <string name="add">Add</string>
     <string name="save_entry">Save Entry</string>
+    <string name="remove">Remove</string>
 </resources>

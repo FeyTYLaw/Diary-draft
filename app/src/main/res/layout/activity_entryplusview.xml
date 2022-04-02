@@ -18,7 +18,7 @@
 
     <Button
         android:id="@+id/Save"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/et_entry"
         android:layout_marginStart="10dp"
@@ -26,6 +26,32 @@
         android:layout_marginEnd="10dp"
         android:fontFamily="@font/nothing_you_could_do"
         android:text="@string/save_entry"
+        android:textColor="#B69f95"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/nLogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_entry"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/nothing_you_could_do"
+        android:text="@string/logout"
+        android:textColor="#B69f95"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_entry"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/nothing_you_could_do"
+        android:text="@string/logout"
         android:textColor="#B69f95"
         android:textStyle="bold" />
 
