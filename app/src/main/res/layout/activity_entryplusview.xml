@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back_brown_water"
     tools:context=".Sharepreference.entryplusview">
 
     <EditText
@@ -58,10 +59,9 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
-        android:layout_height="235dp"
+        android:layout_height="340dp"
         android:layout_below="@+id/Save"
         android:layout_marginTop="9dp" />
-
 
 
 </RelativeLayout>
